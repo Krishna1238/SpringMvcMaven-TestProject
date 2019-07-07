@@ -17,6 +17,7 @@ public class EmployeeCntroller {
 	@GetMapping("/wish.htm")
 	public String wish(Model model) {
 		   
+		System.out.println("Test");
 		     String msg=service.getWish();
 		     model.addAttribute("msg",msg);
 		      return "employeedetails";
